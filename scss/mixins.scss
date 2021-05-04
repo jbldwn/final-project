@@ -1,0 +1,75 @@
+@mixin siteButton(
+  $btnWidth,
+  $btnRadius: 0px,
+  $btnHeight: 40px,
+  $btnDisplay: flex,
+  $btnAlign: center,
+  $btnJustify: center,
+  $btnDecore: none
+) {
+  height: $btnHeight;
+  width: $btnWidth;
+  border-radius: $btnRadius;
+  display: $btnDisplay;
+  align-items: $btnAlign;
+  justify-content: $btnJustify;
+  text-decoration: $btnDecore;
+}
+
+@mixin background(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+
+@mixin backgroundDynam(
+  // $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    // image: url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+
+@mixin backgroundDRK(
+  $imagepath,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}
+
+@mixin backgroundColorized(
+  $imagepath,
+  $colorRGBA,
+  $repeat: no-repeat,
+  $position: center,
+  $cover: cover
+) {
+  background: {
+    image: linear-gradient(to right, $colorRGBA, $colorRGBA), url($imagepath);
+    repeat: $repeat;
+    position: $position;
+    size: $cover;
+  }
+}

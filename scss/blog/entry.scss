@@ -1,0 +1,76 @@
+.blogEntry {
+  max-width: 1280px;
+  margin: 50px auto;
+
+  &-header {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    width: 100%;
+    //offer container
+    &-image {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: bisque;
+      &.blogPic {
+        @include backgroundColorized("../assets/blog.jpg", $overlay-pinkRGBA);
+      }
+      .date {
+        background-color: $site-pink;
+        height: 155px;
+        width: 155px;
+        padding: 20px 50px;
+        color: $site-white;
+        font-family: Gill;
+        &-day {
+          font-size: 55px;
+        }
+        &-month {
+          font-size: 31px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .entry {
+      max-width: 50%;
+      min-height: 287px;
+      display: flex;
+      margin-top: 30px;
+      .date {
+        background-color: $site-pink;
+        height: 60px;
+        width: 60px;
+        padding: 10px 20px;
+        color: $site-white;
+        font-family: Gill;
+        &-day {
+          font-size: 22px;
+        }
+        &-month {
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+
+      &-image {
+        height: 140px;
+        width: 380px;
+        // background-color: bisque;
+        &.offer1 {
+          @include background("../assets/blog.jpg");
+        }
+      }
+    }
+  }
+  &-blog {
+    padding: 50px 0;
+    // background-color: aqua;
+    h3:last-of-type {
+      margin-top: 50px;
+    }
+  }
+}

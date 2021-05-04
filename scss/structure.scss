@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: red 2px solid;
+}
+html,
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: reg;
+  font-weight: normal;
+}
+p {
+  font-family: Gill;
+  font-size: 16px;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-family: Gill;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: Gill;
+  font-size: 20px;
+  color: $site-pink;
+  text-transform: capitalize;
+}
+h4 {
+  font-family: Gill;
+  font-size: 250px;
+  text-transform: capitalize;
+}
+h5 {
+  font-family: Gill;
+  font-size: 130px;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+#margin {
+  max-width: $min-width;
+  margin: 50px auto;
+}
+.margin {
+  max-width: $min-width;
+  margin: 50px auto;
+}
+#border {
+  max-width: $max-width;
+  margin: 50px auto;
+}
+.border {
+  max-width: $max-width;
+  margin: 50px auto;
+}
+
+@font-face {
+  font-family: "Gill";
+  src: url(fonts/GillSans.ttc);
+}
+
+@font-face {
+  font-family: "PTSerif-Bold";
+  src: url(fonts/PTSerif-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSerif-BoldItal";
+  src: url(fonts/PTSerif-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSerif-Ital";
+  src: url(fonts/PTSerif-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSerifReg";
+  src: url(fonts/PTSerif-Regular.ttf) format("truetype");
+}
+
+button {
+  font-family: Gill;
+  text-transform: uppercase;
+  background-color: $site-pink;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  color: $site-white;
+  &.Subscribe {
+    background-color: $site-white;
+    font-size: 16px;
+    color: $site-pink;
+    @include siteButton(167px, 0, 60px);
+  }
+}
+::placeholder {
+  color: $site-white;
+  opacity: 0.5;
+}
+#underline.wht {
+  border-bottom: $site-white solid 2px;
+}
+#underline.blk {
+  border-bottom: $site-black solid 2px;
+}
+
+@media all and (max-width: 1200px) {
+  #border {
+    min-width: 100%;
+    max-width: 1280px;
+    // height: 100px;
+    padding: 0 25px;
+  }
+}

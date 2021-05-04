@@ -1,0 +1,33 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "structure.scss";
+
+//nav asset
+@import "nav/nav.scss";
+// @import "nav/nav-wht.scss";
+// @import "nav/nav-blk.scss";
+
+//combined nav;
+// @import "nav/nav.scss";
+
+//home assets
+@import "home/hero.scss";
+@import "home/testimonial.scss";
+@import "home/comingevents.scss";
+
+//about assets
+@import "about/about.scss";
+
+//gallery
+@import "gallery/gallery.scss";
+@import "gallery/event.scss";
+
+//blog
+@import "blog/blog.scss";
+@import "blog/entry.scss";
+
+//contact
+@import "contact/contact.scss";
+
+//footer asset
+@import "footer/footer.scss";

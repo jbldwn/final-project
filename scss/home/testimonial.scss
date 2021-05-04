@@ -1,0 +1,28 @@
+.testimonial {
+  max-width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background-color: aqua;
+
+  p {
+    width: 65%;
+    flex-direction: column;
+    margin: 0 auto;
+    color: $site-pink;
+    font-size: 15px;
+    font-family: PTSerifReg;
+  }
+  p:first-of-type {
+    margin-bottom: 25px;
+    color: $site-yellow;
+    font: Gill;
+    font-style: italic;
+  }
+  p:last-of-type {
+    margin-top: 5px;
+    font-size: 10px;
+    color: $site-gray;
+  }
+}

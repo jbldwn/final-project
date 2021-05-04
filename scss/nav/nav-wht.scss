@@ -1,0 +1,44 @@
+#white-nav {
+  min-width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  padding: 0 25px;
+
+  .navmargin {
+    margin: 0 auto;
+    max-width: 980px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: $site-white solid 2px;
+
+    #logo {
+      width: 92px;
+      height: 42px;
+      @include background("../assets/logo/logo-white.png");
+    }
+
+    .links {
+      // background-color: bisque;
+      width: 50%;
+      height: 42px;
+      align-self: center;
+      display: flex;
+      .nav-white {
+        color: $site-white;
+      }
+      a,
+      p {
+        text-decoration: none;
+        margin: auto;
+        font-family: Gill;
+        text-transform: lowercase;
+      }
+      p {
+        color: $site-pink;
+        font-size: 30px;
+      }
+    }
+  }
+}

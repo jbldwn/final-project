@@ -1,0 +1,40 @@
+.hero {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  @include backgroundColorized("../assets/home-hero.jpg", $overlay-yellowRGBA);
+
+  .introContainter {
+    padding: 70px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $site-white;
+    .header {
+      color: $site-white;
+      margin: 0 auto;
+      font-family: PTSerifReg;
+    }
+    .subheader {
+      color: $site-pink;
+      margin: 0 auto;
+      font-family: Gill;
+      font-style: italic;
+      font-size: 20px;
+    }
+    p {
+      font-style: italic;
+      margin: 0 auto;
+      text-align: center;
+    }
+    button {
+      @include siteButton(133px);
+      // padding-top: 48px;
+      height: 40px;
+      width: 122px;
+      margin: 0 auto;
+    }
+  }
+}

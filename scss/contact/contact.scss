@@ -1,0 +1,88 @@
+.contact {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .header {
+    width: 230px;
+    border-bottom: 2px $site-black solid;
+  }
+
+  //offer container
+  &-box {
+    margin-top: 50px;
+    max-width: 1280px;
+    justify-content: space-between;
+    display: flex;
+
+    &-direct {
+      min-width: 56%;
+      // flex-direction: column;
+      &-form {
+        min-width: 100%;
+        height: 522px;
+        // justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
+
+        input {
+          height: 60px;
+          width: 100%;
+          background-color: $off-white;
+          border: none;
+          padding: 20px;
+          font-family: Gill;
+        }
+        input:last-of-type {
+          height: 199px;
+          // resize: none;
+          padding-bottom: 165px;
+        }
+        button {
+          @include siteButton(133px, 0px);
+          // margin-bottom: -30px;
+        }
+      }
+    }
+    &-info {
+      min-width: 38%;
+      flex-direction: column;
+      // margin-top: 30px;
+      .map {
+        height: 442px;
+        width: 100%;
+        @include background("../assets/map.jpg");
+      }
+      p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .contact {
+    max-width: 100%;
+    margin: 50 auto;
+    // display: flex;
+    &-box {
+      // max-width: 100%;
+      // display: initial;
+      &-info {
+        width: 35%;
+        // max-width: 100%;
+
+        .map {
+          // width: 100%;
+        }
+      }
+      &-direct {
+        width: 60%;
+      }
+    }
+
+    form {
+      // min-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.gallery {
+  width: 100%;
+  .header {
+    width: 230px;
+    border-bottom: 2px $site-black solid;
+  }
+  .wall {
+    height: 513px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background-color: antiquewhite;
+    .topRow {
+      display: flex;
+      justify-content: space-between;
+      #yellow {
+        height: 187px;
+        width: 50%;
+        // background-color: $site-yellow;
+        @include backgroundColorized(
+          "../../assets/gallery/1.png",
+          $overlay-yellowRGBA
+        );
+      }
+      #pink {
+        height: 187px;
+        width: 19%;
+        // background-color: $site-pink;
+        @include backgroundColorized(
+          "../../assets/gallery/2.jpeg",
+          $overlay-pinkRGBA
+        );
+      }
+      #green {
+        height: 187px;
+        width: 27%;
+        // background-color: $site-green;
+        @include backgroundColorized(
+          "../../assets/gallery/3.jpg",
+          $overlay-greenRGBA
+        );
+      }
+    }
+    .bottomRow {
+      display: flex;
+      justify-content: space-between;
+      #purple {
+        height: 306px;
+        width: 61%;
+        // background-color: $site-purple;
+        @include backgroundColorized(
+          "../../assets/gallery/4.jpg",
+          $overlay-purpleRGBA
+        );
+      }
+      #teal {
+        height: 306px;
+        width: 36%;
+        // background-color: $site-teal;
+        @include backgroundColorized(
+          "../../assets/gallery/5.png",
+          $overlay-tealRGBA
+        );
+      }
+    }
+  }
+}
